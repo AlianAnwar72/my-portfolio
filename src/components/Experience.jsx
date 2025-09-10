@@ -9,6 +9,17 @@ import {
 
 const experiences = [
   {
+    title: "Software Engineer Intern",
+    company: "NaturalFlow AI",
+    type: "Internship",
+    year: "2025",
+    location: "On-Site",
+    points: [
+      "Developed the frontend of a construction website using Next.js, focusing on building a responsive design and enhancing overall user experience",
+      "Contributed to the backend development of a platform for creating voice agents for phone calls, ensuring smooth integration with the core system",
+    ],
+  },
+  {
     title: "Lab Demonstrator",
     company: "Fast Nuces ISB",
     type: "On-site",
