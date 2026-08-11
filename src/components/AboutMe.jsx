@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import CV from "../assets/Alian Anwar Resume .pdf";
-import profileImg from "../assets/profile3.jpg";
+import profileImg from "../assets/profile-about.jpg";
 import {
   FaPhone,
   FaEnvelope,
@@ -29,7 +29,7 @@ const infoItems = [
   },
   {
     label: "Occupation",
-    value: "Developer",
+    value: "Full Stack AI Developer",
     icon: <FaBriefcase className="text-primary" />,
   },
   {
@@ -94,7 +94,7 @@ function AboutMe() {
           <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary to-secondary blur-2xl opacity-60 animate-pulse z-0" />
           <img
             src={profileImg}
-            alt="Munam Mustafa"
+            alt="Alian Anwar"
             className="w-48 h-48 rounded-2xl border-4 border-white shadow-2xl object-cover relative z-10"
           />
         </motion.div>
@@ -109,17 +109,25 @@ function AboutMe() {
           </h2>
           <div className="space-y-4 text-muted text-lg mb-8">
             <p>
-              I'm a passionate Full Stack Web Developer who loves transforming
-              ideas into interactive and scalable web applications. From
-              designing intuitive frontends to building robust backends, I
-              thrive on working across the entire tech stack.
+              I am a Full Stack AI Developer experienced in building
+              AI-powered web platforms, scalable REST APIs, and
+              production-ready backend workflows using Next.js, React.js,
+              Node.js, Python, FastAPI, PostgreSQL, MongoDB, and AI
+              integrations.
+            </p>
+            <p>
+              I am currently a Full Stack AI Developer at Data I (NUST-NSTP,
+              Islamabad), where I am developing Eligient, an AI-powered legal
+              technology platform featuring contract generation, contract
+              review, and an integrated AI chatbot. I also bring hands-on
+              AI/ML experience from projects spanning GAN-based virtual
+              try-on, NLP-driven audio generation, and intelligent tutoring
+              platforms.
             </p>
             <p>
               I hold a Bachelor's degree in Computer Science from FAST-NUCES,
               where I built a strong foundation in modern web technologies,
-              problem-solving, and  software development. I’m eager to keep
-              growing and contributing to innovative projects in the
-              ever-evolving field of web development.
+              problem-solving, and software development.
             </p>
           </div>
 

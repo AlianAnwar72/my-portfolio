@@ -1,6 +1,6 @@
 //import React from "react";
 import { motion } from "framer-motion";
-import profileImage from "../assets/profile1.jpg";
+import profileImage from "../assets/profile-hero.jpg";
 
 const Hero = () => (
   <section
@@ -32,7 +32,7 @@ const Hero = () => (
       <img
         src={profileImage}
         alt="Alian Anwar"
-        className="w-36 h-36 md:w-44 md:h-44 lg:w-55 lg:h-55 rounded-full border-4 border-white shadow-2xl object-cover relative z-10"
+        className="w-36 h-36 md:w-44 md:h-44 lg:w-55 lg:h-55 rounded-full border-4 border-white shadow-2xl object-cover object-top relative z-10"
       />
     </motion.div>
 
@@ -51,7 +51,7 @@ const Hero = () => (
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.7 }}
     >
-      Full Stack Developer & Lifelong Learner
+      Full Stack AI Developer
     </motion.p>
     <motion.p
       className="text-lg md:text-xl text-muted text-center z-10 mb-8 max-w-2xl"
@@ -59,8 +59,8 @@ const Hero = () => (
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, delay: 0.9 }}
     >
-      I build beautiful, scalable web applications and love turning ideas into
-      reality with code.
+      I build AI-powered web platforms and full-stack systems, turning ideas
+      into production-ready applications.
     </motion.p>
 
     {/* Call to Action */}

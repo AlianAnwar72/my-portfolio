@@ -9,38 +9,46 @@ import {
 
 const experiences = [
   {
+    title: "Full Stack AI Developer",
+    company: "Data I",
+    year: "Feb 2026 – Present",
+    location: "NUST-NSTP, Islamabad",
+    points: [
+      "Developed Eligient, an AI-powered legal technology platform for contract generation and review.",
+      "Integrated an AI chatbot to provide conversational assistance and support users across the platform.",
+      "Built full-stack features using Next.js, React.js, Python, FastAPI, PostgreSQL, and AI technologies.",
+      "Worked on authentication, billing, backend services, admin functionality, and production deployment.",
+    ],
+  },
+  {
     title: "Software Engineer Intern",
     company: "NaturalFlow AI",
     type: "Internship",
-    year: "2025",
-    location: "On-Site",
+    year: "Aug 2025 – Sep 2025",
     points: [
       "Developed the frontend of a construction website using Next.js, focusing on building a responsive design and enhancing overall user experience",
       "Contributed to the backend development of a platform for creating voice agents for phone calls, ensuring smooth integration with the core system",
     ],
   },
   {
-    title: "Lab Demonstrator",
-    company: "Fast Nuces ISB",
-    type: "On-site",
-    year: "2022-2024",
-    location: "Islamabad, Pakistan",
+    title: "Web Developer Intern",
+    company: "Power Moves Engineering Limited",
+    type: "Internship",
+    year: "Aug 2024 – Sep 2024",
     points: [
-      "Conducted lab sessions for core CS courses including OOP, Data Structures, Operating Systems, and COAL, simplifying complex concepts for students",
-      "Evaluated assignments, lab tasks, and projects, providing constructive feedback to enhance student understanding",
-      "Facilitated a collaborative lab environment, encouraging critical thinking and peer-to-peer learning",
+      "Built and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).",
+      "Developed responsive user interfaces and supported backend API integration.",
+      "Assisted the Solution Design Department with web development tasks and troubleshooting.",
     ],
   },
   {
-    title: "Teacher Assistant",
-    company: "Fast Nuces ISB",
-    type: "On-site",
-    year: "2024-2025",
+    title: "Lab Demonstrator / Teaching Assistant",
+    company: "FAST NUCES",
+    year: "Sep 2022 – Jan 2025",
     location: "Islamabad, Pakistan",
     points: [
-      "Evaluated assignments, quizzes, and lab tasks, ensuring fair and accurate grading",
-      "Provided one-on-one academic support and mentoring to students, clarifying key networking concepts",
-      "Helped maintain course material and supported smooth execution of lab and assessment activities",
+      "Guided labs in OOP, Data Structures, OS, and COAL.",
+      "Evaluated work and mentored students in Computer Networks.",
     ],
   },
 ];
@@ -56,7 +64,7 @@ const education = [
     degree: "Bachelor's in Computer Science",
     institution: "National University of Computer and Emerging Sciences - FAST",
     location: "Islamabad, Pakistan",
-    year: "2021-2020",
+    year: "2021-2025",
   },
 ];
 

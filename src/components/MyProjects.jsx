@@ -1,14 +1,34 @@
 //import React from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import DownloadCV from "./DownloadCV";
 
 const projects = [
+  {
+    title: "Eligient",
+    shortTitle: "AI-Powered Legal Technology Platform",
+    description:
+      "Developed Eligient, an AI-powered legal technology platform for contract generation and contract review. Integrated an AI chatbot to provide conversational assistance and support users across the platform.",
+    link: "https://www.eligient.co.uk",
+    linkLabel: "Visit Website",
+    linkType: "website",
+    tools: ["Next.js", "React.js", "Python", "FastAPI", "PostgreSQL", "AI Integration"],
+  },
+  {
+    title: "NaturalFlow AI",
+    shortTitle: "Voice Agent Platform",
+    description:
+      "Developed frontend features for a construction website using Next.js, focusing on responsive and user-friendly interfaces. Contributed to the backend of a platform for creating AI-powered voice agents for phone calls.",
+    tools: ["Next.js", "Python", "Backend APIs", "AI Voice Agents"],
+  },
   {
     title: "SmartTutor",
     shortTitle: "Final Year Project at FAST NUCES, ISB",
     description:
       "Developed SmartTutor, an interactive learning platform focused on delivering seamless user experiences for both students and tutors. The platform features integrated video calling capabilities and real-time emotion tracking, allowing tutors to monitor student engagement during online sessions and tailor their teaching accordingly.",
-    github: "https://github.com/AlianAnwar72/SmartTutor",
+    link: "https://github.com/AlianAnwar72/SmartTutor",
+    linkLabel: "View on GitHub",
+    linkType: "github",
     tools: [
       "HTML",
       "CSS",
@@ -23,52 +43,23 @@ const projects = [
     ],
   },
   {
-    title: "My Dressing Organizer",
-    shortTitle: "Wardrobe Management System",
-    description:
-      "Wardrobe Manager is a smart web application that helps users organize and manage their clothing. Built with the MERN stack, it allows users to track clothing items, update last worn dates, and receive outfit suggestions based on wardrobe history, enhancing convenience and personal style management.",
-    github: "https://github.com/AlianAnwar72/My-Dressing-Organizer",
-    tools: ["React", "Node.js", "MongoDB", "Express", "REST API"],
-  },
-  {
-    title: "FLEX LMS",
-    shortTitle: "Database Project",
-    description:
-      "I developed Flex LMS, a scalable Learning Management System that streamlines academic management by handling attendance, course registration, evaluations, and marks. Designed as a database-driven application, it ensures efficient record-keeping and provides a user-friendly interface for both students and faculty.",
-    github: "https://github.com/AlianAnwar72/Flex-LMS",
-    tools: [
-      "C#",
-      ".NET",
-      "Blazor",
-      "Razor Components",
-      "Bootstrap",
-      "HTML",
-      "CSS",
-    ],
-  },
-  {
     title: "VirtuWear",
     shortTitle: "Virtual Try-On System",
     description:
       "I developed VirtuWear, a GAN-based virtual try-on system leveraging the HR-VITON architecture with a UNet generator to enable realistic garment fitting. The system enhances visual realism and minimizes warping compared to baseline models, providing a seamless virtual dressing experience.",
-    github: "https://github.com/AlianAnwar72/VirtuWear",
+    link: "https://github.com/AlianAnwar72/VirtuWear",
+    linkLabel: "View on GitHub",
+    linkType: "github",
     tools: ["PyTorch", "TensorFlow", "OpenCV"],
-  },
-  {
-    title: "Smart Timetable Scheduler",
-    shortTitle: "Artificial Intelligence Course Project",
-    description:
-      "Smart Timetable Scheduler is an AI-powered system designed to solve the university timetable scheduling problem using genetic algorithms. It efficiently assigns time slots to courses, ensuring minimal conflicts between professors, sections, and classrooms.",
-    github:
-      "https://github.com/AlianAnwar72/Smart-Timetable-Scheduler",
-    tools: ["Python", "Pandas", "Numpy", "IPython Notebook"],
   },
   {
     title: "Story2Audio",
     shortTitle: "Story to Audio Microservice",
     description:
       "I developed Story2Audio, a microservice that converts written stories into expressive audio using local NLP and TTS models. The system features a gRPC API, Gradio-based user interface, Docker deployment, and text enhancement powered by Falcon-RW-1B.",
-    github: "https://github.com/AlianAnwar72/Story2Audio",
+    link: "https://github.com/AlianAnwar72/Story2Audio",
+    linkLabel: "View on GitHub",
+    linkType: "github",
     tools: [
       "Python",
       "PyTorch",
@@ -77,6 +68,44 @@ const projects = [
       "gRPC",
       "Docker",
       "Gradio",
+    ],
+  },
+  {
+    title: "Smart Timetable Scheduler",
+    shortTitle: "Artificial Intelligence Course Project",
+    description:
+      "Smart Timetable Scheduler is an AI-powered system designed to solve the university timetable scheduling problem using genetic algorithms. It efficiently assigns time slots to courses, ensuring minimal conflicts between professors, sections, and classrooms.",
+    link: "https://github.com/AlianAnwar72/Smart-Timetable-Scheduler",
+    linkLabel: "View on GitHub",
+    linkType: "github",
+    tools: ["Python", "Pandas", "Numpy", "IPython Notebook"],
+  },
+  {
+    title: "My Dressing Organizer",
+    shortTitle: "Wardrobe Management System",
+    description:
+      "Wardrobe Manager is a smart web application that helps users organize and manage their clothing. Built with the MERN stack, it allows users to track clothing items, update last worn dates, and receive outfit suggestions based on wardrobe history, enhancing convenience and personal style management.",
+    link: "https://github.com/AlianAnwar72/My-Dressing-Organizer",
+    linkLabel: "View on GitHub",
+    linkType: "github",
+    tools: ["React", "Node.js", "MongoDB", "Express", "REST API"],
+  },
+  {
+    title: "FLEX LMS",
+    shortTitle: "Database Project",
+    description:
+      "I developed Flex LMS, a scalable Learning Management System that streamlines academic management by handling attendance, course registration, evaluations, and marks. Designed as a database-driven application, it ensures efficient record-keeping and provides a user-friendly interface for both students and faculty.",
+    link: "https://github.com/AlianAnwar72/Flex-LMS",
+    linkLabel: "View on GitHub",
+    linkType: "github",
+    tools: [
+      "C#",
+      ".NET",
+      "Blazor",
+      "Razor Components",
+      "Bootstrap",
+      "HTML",
+      "CSS",
     ],
   },
 ];
@@ -136,26 +165,22 @@ const MyProjects = () => {
                   </span>
                 ))}
               </div>
-              <motion.a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-auto inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white font-heading rounded-full shadow hover:from-secondary hover:to-primary hover:scale-105 transition-all duration-300"
-                whileHover={{ scale: 1.07 }}
-              >
-                <svg
-                  className="w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
+              {project.link && (
+                <motion.a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-auto inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white font-heading rounded-full shadow hover:from-secondary hover:to-primary hover:scale-105 transition-all duration-300"
+                  whileHover={{ scale: 1.07 }}
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-                View on GitHub
-              </motion.a>
+                  {project.linkType === "website" ? (
+                    <FaGlobe className="w-5 h-5" />
+                  ) : (
+                    <FaGithub className="w-5 h-5" />
+                  )}
+                  {project.linkLabel || "View on GitHub"}
+                </motion.a>
+              )}
             </motion.div>
           ))}
         </div>
