@@ -71,7 +71,7 @@ const projects = [
     ],
   },
   {
-    title: "Smart Timetable Scheduler",
+    title: "Timetable Scheduler",
     shortTitle: "Artificial Intelligence Course Project",
     description:
       "Smart Timetable Scheduler is an AI-powered system designed to solve the university timetable scheduling problem using genetic algorithms. It efficiently assigns time slots to courses, ensuring minimal conflicts between professors, sections, and classrooms.",
