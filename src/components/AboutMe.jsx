@@ -116,7 +116,7 @@ function AboutMe() {
               integrations.
             </p>
             <p>
-              I am currently a Full Stack AI Developer at Data I (NUST-NSTP,
+              I am currently a Full Stack AI Developer at DataEye (NUST-NSTP,
               Islamabad), where I am developing Eligient, an AI-powered legal
               technology platform featuring contract generation, contract
               review, and an integrated AI chatbot. I also bring hands-on
