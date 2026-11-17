@@ -23,7 +23,7 @@ const skillCategories = [
   {
     title: "Databases",
     icon: <FaDatabase className="w-6 h-6 text-primary" />,
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "SQL Server", "PhpMyAdmin"],
+    skills: ["Supabase","PostgreSQL", "MongoDB", "MySQL", "SQL Server", "PhpMyAdmin"],
   },
   {
     title: "AI / ML",
