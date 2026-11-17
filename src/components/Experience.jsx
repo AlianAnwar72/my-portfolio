@@ -10,7 +10,7 @@ import {
 const experiences = [
   {
     title: "Full Stack AI Developer",
-    company: "Data I",
+    company: "DataEye",
     year: "Feb 2026 – Present",
     location: "NUST-NSTP, Islamabad",
     points: [
