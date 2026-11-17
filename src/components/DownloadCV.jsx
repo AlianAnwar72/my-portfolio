@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../assets/Alian Anwar Resume .pdf";
+import CV from "../assets/Alian Anwar Resume.pdf";
 import { FiDownload } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -7,7 +7,7 @@ const DownloadCV = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "Alian Anwar Resume .pdf";
+    link.download = "Alian Anwar Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

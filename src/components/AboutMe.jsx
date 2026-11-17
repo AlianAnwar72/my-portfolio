@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import CV from "../assets/Alian Anwar Resume .pdf";
+import CV from "../assets/Alian Anwar Resume.pdf";
 import profileImg from "../assets/profile-about.jpg";
 import {
   FaPhone,
@@ -53,7 +53,7 @@ function AboutMe() {
   const handleDownload = () => {
     const link = document.createElement("a");
     link.href = CV;
-    link.download = "Alian Anwar Resume .pdf";
+    link.download = "Alian Anwar Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
